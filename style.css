@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+    --header-black: #212121;
+    --sidebar-red: #16a34a;
+    --sidebar-font: #fff;
+    --main-color: #d1d5db;
+}
+
+/* Sidebar*/
+
+body{
+    font-family:Georgia,serif;
+
+}
+
+.grid-container{
+   
+    display: grid;
+    grid-template-columns: 25% 75% ; /* col1, col2*/
+
+    
+}
+
+.sidebar{
+    background-color: var(--sidebar-red);
+    height: 100vh;
+    
+
+  
+    color: var(--sidebar-font);
+    fill: var(--sidebar-font);
+}
+
+.sidebar-menu{
+    display:grid;
+    gap: .5rem;
+    margin-left: 1rem;
+}
+.sidebar-hero{
+    display:flex; /* Puts letter on right of image*/
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0 4rem 0; /* top | right | bottom | left */
+}
+
+.sidebar-hero > svg{
+    width: 90px;
+    height: 90px;
+}
+
+.image-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+} 
+.image-text>svg{
+    width: 40px;
+    height: 40px;
+}
+
+.image-text >p{
+    font-size: 18px;
+    font-weight: bold;  
+
+    padding-left: 1.5rem;    
+}
+
+.image-text > p a{
+    text-decoration: none; /*Removed hyperlink underline*/
+    color:  #fff;
+}
+.image-text > p a:visited{
+    text-decoration: none; /*Removed hyperlink underline*/
+    color:  #fff;
+}
+
+
+.image-text > p:hover{
+   transform: scale(1.05);
+   
+   
+}
+
+
+.sidebar-menu2{
+    margin-top: 5rem;
+    margin-left: 1rem;
+
+    display:grid;
+    gap: .5rem;
+}
+/* Main*/
+
+.main{
+    margin: 0;
+    padding: 0;
+
+    background-color: #fff;
+    height:100vh;
+
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+
+.header{
+    background-color:  #fff;
+    height:100vh;
+
+    display:flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 1rem 0;
+}
+.nav > svg{
+    width: 20px;
+    height: 20px;
+}
+
+.nav > input{
+    width: 23rem;
+    border-radius: .5rem;
+}
+
+.nav>img, .left > img{
+    border-radius: 50%;
+}
+.left{
+   display: flex;
+}
+
+.left >img{
+    width:50px;
+    height: 50px;
+}
+
+.btns{
+    display: flex;
+    margin-left: 12rem;
+}
+
+.btns > button{
+    display: flex;
+    margin: 1rem;
+}
+
+button{
+    padding: 0px;
+    background-color: aquamarine;
+    columns: var(--sidebar-font);
+    border-radius: 20px;
+   padding: .6rem 1.5rem;
+    text-align: center;
+}
+
+.content{
+    background-color: rgb(243, 241, 241);
+}
