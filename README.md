@@ -1,2 +1,8 @@
 # Dashboard
-Responsive dashboard with REST API using Django
+Responsive dashboard.
+
+Image/SVG credits: 
+https://pictogrammers.com/library/mdi/
+
+Pallete credits:
+https://tailwindcss.com/docs/customizing-colors
