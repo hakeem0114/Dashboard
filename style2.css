@@ -1,7 +1,11 @@
 *{
-  
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+html,body{
+    overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
@@ -11,7 +15,7 @@ body{
 }
 .grid{
     display: grid;
-    grid-template-columns: 18% 78% ; /* col1, col2*/
+    grid-template-columns: 22% 78% ; /* col1, col2*/
 }
 
 .sidebar{
@@ -61,6 +65,11 @@ body{
 .list-items2{
     margin-top: 50px;
 }
+
+
+
+/***********************RIGHT SECTION*******************/
+
 .main{
     background-color: brown;
     height: 100vh;
