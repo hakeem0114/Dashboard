@@ -39,7 +39,7 @@ body{
 
 .sidebar-menu{
     display:grid;
-    gap: .5rem;
+    gap: 1rem;
     margin-left: 4rem;
 }
 .sidebar-hero{
@@ -134,7 +134,7 @@ body{
 }
 
 .nav > input{
-    width: 27rem;
+    width: 35rem;
     border-radius: .5rem;
 
     margin-right: 5rem;
@@ -147,13 +147,9 @@ body{
     box-shadow: 2px 2px 2px #8b9788;
     padding: .5rem;
 }
-
-#search-nav:focus{
-    border: 2px  #e9ebcc;
-    box-shadow: 2px 2px 2px #cece56;
-}
-#search-nav:active{
-    border: 2px  #e9ebcc;
+.nav>input:focus{
+    outline: none;
+    border: 2px  #8ed379;
     box-shadow: 2px 2px 2px #cece56;
 }
 
@@ -225,10 +221,7 @@ button{
     
    
 }
-.projects > h4{
-    margin-left: 1.2rem;
-    margin-top: 1rem;
-}
+
 
 .cards-left{
   
@@ -243,6 +236,7 @@ button{
 
 .card{
     background-color: white;
+    box-shadow: 3px 3px 3px #8b9788;
     border-left: .5rem solid rgb(216, 62, 23);
     border-radius: 7px;
     width: 90%;
@@ -280,7 +274,10 @@ button{
 }
 .projects > h4{
     font-size: 20px;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
 }
+
 h6{
     font-size: 17px;
 }
@@ -301,6 +298,7 @@ h6{
     height: 80%;
     background-color: white;
     border-radius: .6rem;
+    
 }
 .announce-text{
     padding: .5rem 1.2rem;
@@ -312,7 +310,73 @@ h6{
     font-size: 13px;
     color: #504d4b; 
 }
+
+.announce > h4{
+    font-size: 20px;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+.trending >h4{
+    font-size: 20px;
+    margin-left: 1.2rem;
+    margin-top:1rem;
+    margin-bottom: .2rem;
+}
+
+.announce-card{
+    margin: 10px;
+    box-shadow: 3px 3px 3px #8b9788;
+}
+
 .underline{
-    border: 1px solid black;
+    border: 1.1px solid rgb(224, 193, 193);
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.trending-card{
+    margin-left: 1rem;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   
+    box-shadow: 3px 3px 3px #8b9788;
+
+}
+.trending-image{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+    margin: 8px 22px;
+    
+}
+
+.trending-image>img{
+    border-radius: 50%; /*Circular images*/
+    width: 50px;
+    height: 47px;
+}
+
+.trending-text{
+    margin-left: 10px;
+}
+.trending-text >p{
+    font-size: 13px;   
+    color: #71717a;
+}
+.trending-text >h6{
+    font-size: 15px;  
+    font-weight: lighter; 
+}
+
+.trending-text a{
+    text-decoration: none;
+}
+
+.trending-text > h6> a:visited{
+    color: inherit; /*inherits its parent's color*/
 }
