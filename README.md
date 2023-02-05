@@ -1,5 +1,5 @@
 # Dashboard
-Responsive dashboard.
+Administrator dashboard.
 
 Image/SVG credits: 
 https://pictogrammers.com/library/mdi/
